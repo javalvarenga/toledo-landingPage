@@ -1,3 +1,3 @@
 # LandingPage Toledo
 
-prueba de técnica con react.js
+prueba técnica con react.js
