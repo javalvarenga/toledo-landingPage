@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+  font-family: 'Anton', sans-serif;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./assets/Assets\ desktop/fondo.jpg");
+}
+.hero{
+padding-top: 3rem;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.hero-top{
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  place-items: center;
+}
+.hero-top img{
+  max-width: 50%;
+}
+#title{
+  max-width: 40%;
+  justify-self: flex-end;
+}
+
+.hero ,.recetas > h3{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+}
+
+.game-section,.recetas,.productos{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1.6rem;
+}
+.fondo{
+  position: relative;
+  max-height: 800px;
+  width: 70%;
+  padding: 3rem;
+  background:rgba(0, 0, 0, 0.335);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marco{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  max-height: 700px;
+}
+.game{
+  text-align: center;
+  padding: 0 1.6rem;
+  padding-top: 6rem;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game h3{
+  font-size: 1.3rem;
+}
+.game-container,.siluetas{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.game-container > img,.imgContainer img{
+  height: 9rem;
+}
+.siluetas .imgContainer{
+  border: dotted gray;
+}
+
+
+.lista-recetas{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+
+.lista-recetas > div{
+  margin: 0 1.6rem;
+}
+.receta img{
+height: 18rem;
+}
+
+.receta{
+  position: relative;
+  text-align: center;
+}
+
+.receta button{
+  width: 50%;
+  color: white;
+  text-align: center;
+  background-color: rgb(24, 24, 24);
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  padding: 0.6rem 0;
+}
+.productos h3 {
+  padding-top: 3rem;
+  font-size: 3rem;
+}
+
+@media (max-width:700px) {
+  .game-container > img,.imgContainer img{
+  height: 3rem;
+}
+  .fondo{
+    padding: 1.6rem 1rem;
+    width: 80%;
+  }
+  .game h3,.hero h3{
+    font-size: 0.9rem;
+  }
+}
